@@ -97,6 +97,19 @@ nav a {
   color: #fff;
 }
 
+.buttons {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  padding: 0.4rem 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .section {
   padding: 1.5rem 7%;
   display: -webkit-box;
@@ -127,7 +140,64 @@ nav a {
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
+.section .set-main .chart {
+  background: #fff;
+  padding: 1.5rem 4% !important;
+  border: 5px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.section .set-main .chart table thead {
+  background: #251f44 !important;
+  color: #fff;
+}
+
+.wrapper {
+  background: url("../asset/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #212121;
+  background-blend-mode: multiply;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper form {
+  width: 40%;
+  padding: 5rem 3rem;
+  background: #fff;
+}
+
+.wrapper .form-logo img {
+  width: 4rem;
+  height: auto;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.icofont-navigation-menu {
+  color: #fff;
+}
+
 @media screen and (max-width: 599px) {
+  .buttons {
+    display: block;
+  }
+  .buttons h4 {
+    margin-bottom: 30px;
+  }
   .content {
     padding: 1.5rem 7%;
     display: -webkit-box;
@@ -142,6 +212,23 @@ nav a {
   .content .card {
     width: 100%;
     margin-bottom: 1.5rem;
+  }
+  .section {
+    padding: 1.5rem 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section .set-side {
+    width: 100%;
+  }
+  .section .set-main {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

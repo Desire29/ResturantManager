@@ -80,9 +80,18 @@ nav{
                 background: $primary !important;
                 color: #fff;
             }
+
         }
     }
 }
+
+.buttons{
+    justify-content: space-between !important;
+    padding: 0.4rem 7%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .section{
     padding: 1.5rem 7%;
     display: flex;
@@ -104,12 +113,59 @@ nav{
         border: none;
         border-radius: 10px;
         box-shadow:0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+
+        .chart{
+            background: #fff;
+            padding: 1.5rem 4% !important;
+            border: 5px;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            table{
+                thead{
+                    background: $primary !important;
+                    color: #fff;
+                }
+            }
+        }
     }
 
 }
-
-
+.wrapper{
+    background: url('../asset/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 40%;
+        padding: 5rem 3rem;
+        background: #fff;
+    }
+    .form-logo{
+        img{
+            width: 4rem;
+            height: auto;
+        }
+    }
+}
+.active{
+    border-bottom: 1px solid #fff;
+}
+.icofont-navigation-menu{
+    color:#fff;
+}
 @media screen and (max-width: 599px) {
+    .buttons{
+        display: block;
+        h4{
+            margin-bottom: 30px;
+        }
+    }
     .content{
         padding: 1.5rem 7%;
         display: flex;
@@ -120,6 +176,18 @@ nav{
            margin-bottom: 1.5rem;
 
         }
+    }
+    .section{
+        padding: 1.5rem 7%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .set-side{
+            width: 100%;
+        }
+        .set-main{
+            width: 100%;
 
-       }
-  }
+        }
+    }
+}
