@@ -133,8 +133,8 @@ nav{
 }
 .wrapper{
     background: url('../asset/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+   background-size: cover;
+     background-repeat: no-repeat;
     background-color: #212121;
     background-blend-mode: multiply;
     height: 100vh;
@@ -158,6 +158,15 @@ nav{
 }
 .icofont-navigation-menu{
     color:#fff;
+}
+@media screen and (max-width: 7682222222222222s                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             px) {
+    .wrapper{
+        form{
+            width: 70%;
+            padding: 5rem 3rem;
+            background: #fff;
+        }
+    }
 }
 @media screen and (max-width: 599px) {
     .buttons{
@@ -188,6 +197,13 @@ nav{
         .set-main{
             width: 100%;
 
+        }
+    }
+    .wrapper{
+        form{
+            width: 90%;
+            padding: 5rem 3rem;
+            background: #fff;
         }
     }
 }

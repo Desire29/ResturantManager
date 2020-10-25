@@ -191,6 +191,14 @@ nav a {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper form {
+    width: 70%;
+    padding: 5rem 3rem;
+    background: #fff;
+  }
+}
+
 @media screen and (max-width: 599px) {
   .buttons {
     display: block;
@@ -229,6 +237,11 @@ nav a {
   }
   .section .set-main {
     width: 100%;
+  }
+  .wrapper form {
+    width: 90%;
+    padding: 5rem 3rem;
+    background: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
